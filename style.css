@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#gallery{
+    width: 860px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.photos{
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.photos img{
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    border-radius: 10px;
+}
+
+#gallery .photos img.show{
+    opacity: 1;
+}
