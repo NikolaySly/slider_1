@@ -6,7 +6,7 @@ var i = 0;
 
 btn_prev.onclick = function(){
      images[i].className = '';
-     i = i--
+     i = --i;
      
      if(i < 0){
          i = images.length - 1;
@@ -17,7 +17,7 @@ btn_prev.onclick = function(){
 
 btn_next.onclick = function(){
      images[i].className = '';
-     i = i++ 
+     i = ++i;
      
      if(i >= images.length){
          i = 0;
